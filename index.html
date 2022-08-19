@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <section class="container">
+
+        <!-- HEADING/TITLE -->
+        <nav>
+            <h1 class="heading">Basketball Scoreboard</h1>
+        </nav>
+
+        <!-- HOME / AWAY TEAMS -->
+        <main>
+            <h2 class="home-title">Home</h2>
+            <h2 class="away-title">Away</h2>
+        </main>
+
+        <!-- SCOREBOARD DISPLAYS -->
+        <div id="scoreboard-home" class="scoreboard">0</div>
+
+        <div id="scoreboard-away" class="scoreboard">0</div>
+
+        <!-- INCREMENTOR BUTTONS -->
+        <footer class="footer">
+
+            <div class="home-incrementor">
+                <button id="byOneHome">+1</button>
+                <button id="byTwoHome">+2</button>
+                <button id="byThreeHome">+3</button>
+                <button id="clearHome">CLEAR</button>
+            </div>
+            <div class="away-incrementor">
+                <button id="byOneAway">+1</button>
+                <button id="byTwoAway">+2</button>
+                <button id="byThreeAway">+3</button>
+                <button id="clearAway">CLEAR</button>
+            </div>
+
+        </footer>
+
+    </section>
+
+    <!-- JAVASCRIPT -->
+    <script src="app.js"></script>
+    
+</body>
+</html>

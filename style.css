@@ -1,0 +1,113 @@
+/* RESET STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CUSTOM PROPERTIES  */
+:root {
+    --main-blue: #1B244A;
+    --light-blue: #9AABD8;
+    --main-font: Verdana, sans-serif; 
+}
+
+body {
+    background-image: url(IMG/alex-george-J7qnlH2PUpg-unsplash.jpg);
+    background-size: cover;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 1fr 0.2fr;
+    grid-template-areas: 
+    "nav nav"
+    "main main"
+    "scoreboard-home scoreboard-away"
+    "footer footer";
+}
+
+nav {
+    color: white;
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.heading {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+}
+
+main {
+    color: white;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+h2.home-title {
+    font-size: 2rem;
+    justify-self: center;
+    align-self: center;
+    text-decoration: underline;
+}
+
+h2.away-title {
+    font-size: 2rem;
+    justify-self: center;
+    align-self: center;
+    text-decoration: underline;
+}
+
+#scoreboard-home {
+    color: white;
+    font-size: 8rem;
+    font-weight: bold;
+    grid-area: scoreboard-home;
+    justify-self: center;
+    align-self: center;
+    border: 3px solid white;
+    padding: 80px
+}
+
+#scoreboard-away {
+    color: white;
+    font-size: 8rem;
+    font-weight: bold;
+    grid-area: scoreboard-away;
+    justify-self: center;
+    align-self: center;
+    border: 3px solid white;
+    padding: 80px
+}
+
+footer {
+    color: white;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.home-incrementor {
+    justify-self: center;
+    align-self: center;
+}
+
+.away-incrementor {
+    justify-self: center;
+    align-self: center;
+}
+
+button {
+    background: none;
+    height: 50px;
+    width: 50px;
+    color: white;
+    font-weight: bolder;
+    border: 3px solid white;
+}
